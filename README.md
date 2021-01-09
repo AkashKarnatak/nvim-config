@@ -24,6 +24,11 @@ mkdir -p ~/.config/
 mv nvim-config ~/.config/nvim
 ```
 
+Append this line to the end of your `~/.inputrc`
+```sh 
+"\C-H":"\C-W"
+```
+
 Now fire up neovim and install all the plugins
 ```vim
 :PlugInstall
