@@ -4,7 +4,7 @@ Before using these configurations you'll need to install a few dependecies.
 ### Prerequisite
 Make sure that `python3` and `node` are installed. Install a patched [Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts).
 ```sh
-sudo apt install git cmake dialog fzf ripgrep universal-ctags silversearcher-ag fd-find
+sudo apt install git cmake dialog fzf ripgrep universal-ctags silversearcher-ag fd-find libx11-dev libxext-dev
 # (Optional) If python 2 is installed
 python2 -m pip install pynvim
 # Python3
@@ -16,6 +16,7 @@ pip install ueberzug
 # Node
 npm install -g neovim
 ```
+Build/install [ccls](https://github.com/MaskRay/ccls/wiki/Build) for you OS.
 
 ### Set things up
 ```sh
@@ -24,12 +25,21 @@ mkdir -p ~/.config/
 mv nvim-config ~/.config/nvim
 ```
 
+Create a file `~/.config/ranger/rc.conf` and add the following contents to it
+
+```
+set preview_images true
+set preview_images_method ueberzug
+set draw_borders true
+default_linemode devicons
+```
+
 Append this line to the end of your `~/.inputrc`
 ```sh 
 "\C-H":"\C-W"
 ```
 
-Now fire up neovim and install all the plugins
+Now fire up neovim. You may notice a few Coc errors which are probably due to missing extensions. Therefore install all the plugins and Coc extensions.
 ```vim
 :PlugInstall
 " (Optional) Coc-extensions

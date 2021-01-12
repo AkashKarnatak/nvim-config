@@ -42,5 +42,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-scripts/argtextobj.vim'
     " Mardown suport
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+    " Cpp highlighting
+    Plug 'jackguo380/vim-lsp-cxx-highlight'
+    " Cpp linting
+    Plug 'vim-syntastic/syntastic'
 
 call plug#end()

@@ -10,3 +10,5 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/vim-commentary.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/markdow-preview.vim
+source $HOME/.config/nvim/plug-config/vim-lsp-cxx-highlight.vim
+source $HOME/.config/nvim/plug-config/syntastic.vim
