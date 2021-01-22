@@ -11,29 +11,49 @@
     "~/.config/nvim/utils/snips"
   ], 
   // explorer
-  "explorer.width": 30,
+  "explorer.width": 25,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
+  "explorer.openAction.relativePath": true,
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", ["expanded?", "collapse", "expand"], "open"],
     "v": "open:vsplit"
   },
-  "languageserver": {
-    "ccls": {
-      "command": "ccls",
-      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
-      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
-      "initializationOptions": {
-          "cache": {
-            "directory": "/tmp/ccls"
-          },
-          "index": {
-            "onChange": true
-          },
-          // This is mandatory!
-          "highlight": { "lsRanges" : true }
-        }
-    }
-  }
+  /* "languageserver": { */
+  /*   "clangd": { */
+  /*     "command": "clangd", */
+  /*     "rootPatterns": ["compile_flags.txt", "compile_commands.json"], */
+  /*     "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"] */
+  /*   } */
+  /* } */
+  /* "languageserver": { */
+  /*   "ccls": { */
+  /*     "command": "ccls", */
+  /*     "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"], */
+  /*     "trace.server": "verbose", */
+  /*     "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"], */
+  /*     "initializationOptions": { */
+  /*         "cache": { */
+  /*           "directory": "/tmp/ccls" */
+  /*         }, */
+  /*         "clang": { */
+  /*             // make sure you have installed commandLineTools */
+  /*           "resourceDir": "/usr/lib/llvm-7/lib/clang/7.0.1", */
+  /*           "extraArgs": [ */
+  /*             "-isystem/usr/include/clang/7.0.1/include", */
+  /*             "-isystem/usr/local/include", */
+  /*             "-isystem/usr/include/x86_64-linux-gnu", */
+  /*             "-isystem/usr/include", */
+  /*           ] */
+  /*         }, */
+  /*         "index": { */
+  /*           "onChange": true */
+  /*         }, */
+  /*         // This is mandatory! */
+  /*         "highlight": { "lsRanges" : true } */
+  /*       } */
+  /*   } */
+  /* }, */
+  "coc.preferences.extensionUpdateCheck": "never"
 
 }

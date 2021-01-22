@@ -16,7 +16,8 @@ pip install ueberzug
 # Node
 npm install -g neovim
 ```
-Build/install [ccls](https://github.com/MaskRay/ccls/wiki/Build) for you OS.
+<!-- Build/install [ccls](https://github.com/MaskRay/ccls/wiki/Build) -->
+Build/install [clangd](https://clangd.llvm.org/installation.html)
 
 ### Set things up
 ```sh
@@ -43,6 +44,6 @@ Now fire up neovim. You may notice a few Coc errors which are probably due to mi
 ```vim
 :PlugInstall
 " (Optional) Coc-extensions
-:CocInstall coc-vimlsp coc-tsserver coc-snippets coc-python coc-json coc-highlight coc-explorer
+:CocInstall coc-vimlsp coc-tsserver coc-snippets coc-python coc-json coc-highlight coc-explorer coc-clangd
 ```
 _Now you rock!!!_

@@ -60,21 +60,21 @@ onoremap ^ 0
 tmap ;; <C-\><C-n>
 
 " Open terminal
-nmap <expr> <space>t ManageTerminal()
+" nmap <expr> <space>t ManageTerminal()
 
-function ManageTerminal()
-  if bufname('terminal') ==# 'terminal'
-    if expand('%:t') ==# "terminal" 
-      return "\<C-\>\<C-N>\<C-w>q"
-    else
-      let size = winheight(0)/3
-      return ":sb terminal\<CR>:resize ".size."\<CR>i"
-    endif
-  else
-    let size = winheight(0)/3
-    return ":".size."split\<CR>:te\<CR>:file terminal\<CR>i"
-  endif
-endfunction
+" function ManageTerminal()
+"   if bufname('terminal') ==# 'terminal'
+"     if expand('%:t') ==# "terminal" 
+"       return "\<C-\>\<C-N>\<C-w>q"
+"     else
+"       let size = winheight(0)/3
+"       return ":sb terminal\<CR>:resize ".size."\<CR>i"
+"     endif
+"   else
+"     let size = winheight(0)/3
+"     return ":".size."split\<CR>:te\<CR>:file terminal\<CR>i"
+"   endif
+" endfunction
 
 " ;; for no highlight
 nmap ;; :noh<CR>
@@ -82,5 +82,9 @@ nmap ;; :noh<CR>
 " Map Ctrl-Backspace to delete the previous word in insert mode.
 imap <C-h> <C-W>
 
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da
+" Remap gc to cm
+nmap cm gc
+nmap cmm gcc
+
+" nnoremap <Leader>o o<Esc>^Da
+" nnoremap <Leader>O O<Esc>^Da

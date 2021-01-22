@@ -44,7 +44,23 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
     " Cpp highlighting
     Plug 'jackguo380/vim-lsp-cxx-highlight'
-    " Cpp linting
-    Plug 'vim-syntastic/syntastic'
+    " Startify
+    Plug 'mhinz/vim-startify'
+    " Git integration
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
+    " Which key
+    Plug 'liuchengxu/vim-which-key'
+    " Terminal
+    Plug 'voldikss/vim-floaterm'
+    " Live server
+    Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
+    " Task system for project building
+    Plug 'skywind3000/asynctasks.vim'
+    Plug 'skywind3000/asyncrun.vim'
+    " Codi
+    Plug 'metakirby5/codi.vim'
 
 call plug#end()

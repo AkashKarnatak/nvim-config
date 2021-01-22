@@ -12,3 +12,10 @@ source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/markdow-preview.vim
 source $HOME/.config/nvim/plug-config/vim-lsp-cxx-highlight.vim
 source $HOME/.config/nvim/plug-config/syntastic.vim
+source $HOME/.config/nvim/plug-config/start-screen.vim
+source $HOME/.config/nvim/plug-config/signify.vim
+source $HOME/.config/nvim/keys/which-key.vim
+source $HOME/.config/nvim/plug-config/asynctasks.vim
+source $HOME/.config/nvim/plug-config/floaterm.vim
+source $HOME/.config/nvim/plug-config/codi.vim
+source $HOME/.config/nvim/utils/set-cxx-headers.vim " -> Comment this out 
