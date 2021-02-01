@@ -43,7 +43,7 @@
   /*             "-isystem/usr/include/clang/7.0.1/include", */
   /*             "-isystem/usr/local/include", */
   /*             "-isystem/usr/include/x86_64-linux-gnu", */
-  /*             "-isystem/usr/include", */
+  /*             "-isystem/usr/include" */
   /*           ] */
   /*         }, */
   /*         "index": { */

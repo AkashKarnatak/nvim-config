@@ -2,7 +2,7 @@
 Before using these configurations you'll need to install a few dependecies.
 
 ### Prerequisite
-Make sure that `python3` and `node` are installed. Install a patched [Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts).
+Make sure that `python3` and [`node`](https://github.com/nvm-sh/nvm) are installed. Install a patched [Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts).
 ```sh
 sudo apt install git cmake dialog fzf ripgrep universal-ctags silversearcher-ag fd-find libx11-dev libxext-dev
 # (Optional) If python 2 is installed

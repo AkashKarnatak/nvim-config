@@ -66,6 +66,8 @@ let g:which_key_map.a = {
       \ 'm' : [':MarkdownPreview'        , 'markdown preview'],
       \ 'M' : [':MarkdownPreviewStop'    , 'markdown preview stop'],
       \ 't' : [':FloatermToggle'         , 'terminal'],
+      \ 'u' : ["\<ESC>viwU"              , 'upper case'],
+      \ 'U' : ["\<ESC>viwu"              , 'lower case'],
       \ 'v' : [':Codi'                   , 'virtual repl on'],
       \ 'V' : [':Codi!'                  , 'virtual repl off'],
       \ }
