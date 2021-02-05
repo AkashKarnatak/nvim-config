@@ -85,6 +85,21 @@ let g:which_key_map.b = {
       \ 'p' : ['bprevious'              , 'previous-buffer'],
       \ }
 
+" c is for cscope
+" need to install cscope
+" map <leader>cs :cs find s RTMP_SEM_EVENT_UP<CR>
+let g:which_key_map.c = {
+      \ 'name' : '+cscope' ,
+      \ 's' : [":cs find s <C-R>=expand('<cword>')<CR><CR>"                         , 'symbol'],
+      \ 'g' : [":cs find g \<C-R>=expand('<cword>')\<CR>\<CR>"                      , 'global'],
+      \ 'c' : [":cs find c \<C-R>=expand('<cword>')\<CR>\<CR>"                      , 'calls'],
+      \ 't' : [":cs find t \<C-R>=expand('<cword>')\<CR>\<CR>"                      , 'text'],
+      \ 'e' : [":cs find e \<C-R>=expand('<cword>')\<CR>\<CR>"                      , 'egrep'],
+      \ 'f' : [":cs find f \<C-R>=expand('<cfile>')\<CR>\<CR>"                      , 'file'],
+      \ 'i' : [":cs find i \^\<C-R>=expand('<cfile>')\<CR>$\<CR>"                   , 'includes'],
+      \ 'd' : [":cs find d \<C-R>=expand('<cword>')\<CR>\<CR>"                      , 'called'],
+      \ }
+
 " d is for debug
 " need to install puremourning/vimspector
 " let g:which_key_map.d = {

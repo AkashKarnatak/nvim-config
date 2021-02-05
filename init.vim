@@ -19,3 +19,4 @@ source $HOME/.config/nvim/plug-config/asynctasks.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/codi.vim
 source $HOME/.config/nvim/utils/set-cxx-headers.vim " -> Comment this out 
+source $HOME/.config/nvim/keys/cscope_maps.vim

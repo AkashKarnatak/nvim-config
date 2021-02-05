@@ -36,12 +36,13 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro     " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                           " Your working directory will always be the same as your working directory
+"set noautochdir                         " Prevent vim from automatically changing your directory
 set winminheight=0                      " Set minimum height of a window to zero
 set scrolloff=10                        " Set scrolloff
 
 au! BufWritePost $MYVIMRC source %                " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 " au TermOpen *:$SHELL,*:\$SHELL set scrolloff=0    " set scrollof for shell terminal to 0
-au FileType help only                         " always open help in vertical split
+" au FileType help only                         " always open help in vertical split
 
 " w! can now be used to write to a read only file
 cmap w!! w !sudo tee %
