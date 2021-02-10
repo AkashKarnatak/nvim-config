@@ -4,13 +4,17 @@ Before using these configurations you'll need to install a few dependecies.
 ### Prerequisite
 Make sure that `python3` and [`node`](https://github.com/nvm-sh/nvm) are installed. Install a patched [Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts).
 ```sh
+# For Ubuntu
 sudo apt install git cmake dialog fzf ripgrep universal-ctags silversearcher-ag fd-find libx11-dev libxext-dev xclip
+# For Arch
+sudo pacman -S git cmake dialog fzf ripgrep universal-ctags the_silver_searcher fd libx11 libxext xclip
 # (Optional) If python 2 is installed
 python2 -m pip install pynvim
 # Python3
 pip3 install pynvim pylint ranger-fm ueberzug
 # For conda users
 conda install -c conda-forge pynvim
+conda install -c conda-forge ranger-fm
 conda install -c anaconda pylint
 pip install ueberzug
 # Node
@@ -33,6 +37,12 @@ set preview_images true
 set preview_images_method ueberzug
 set draw_borders true
 default_linemode devicons
+```
+
+Install ranger devicons
+
+```
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 ```
 
 Append this line to the end of your `~/.inputrc`
